@@ -107,7 +107,7 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
 
 ** Interface Enhancement
 
-   - [[http://www.emacswiki.org/emacs/InteractivelyDoThings][IDO]] - =[built-in]= Interactively do things with buffers and files.
+   - [[https://www.emacswiki.org/emacs/InteractivelyDoThings][IDO]] - =[built-in]= Interactively do things with buffers and files.
      - [[https://github.com/DarwinAwardWinner/ido-completing-read-plus][ido-completing-read+]] - Enhance the built-in ido for completion all over Emacs.
      - [[https://github.com/creichert/ido-vertical-mode.el][ido-vertical-mode]] - Make ido display vertically.
    - [[https://github.com/emacs-helm/helm][Helm]] - (Formerly 'Anything') A powerful completion and selection narrowing framework. ( External Guides [[http://tuhdo.github.io/helm-intro.html][1]] )
@@ -115,10 +115,10 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
      - Ivy, a generic completion mechanism for Emacs.
      - Counsel, a collection of Ivy-enhanced versions of common Emacs commands.
      - Swiper, an Ivy-enhanced alternative to isearch.
-   - [[http://www.emacswiki.org/emacs/Icicles][Icicles]] - An Emacs library that enhances minibuffer completion.
+   - [[https://www.emacswiki.org/emacs/Icicles][Icicles]] - An Emacs library that enhances minibuffer completion.
    - [[https://github.com/nonsequitur/smex/][smex]] - A smart M-x enhancement for Emacs.
    - [[https://github.com/dholm/tabbar][tabbar]] - Display a tab bar in the header line.
-   - [[http://www.emacswiki.org/emacs/WinnerMode][winner]] - =[built-in]= "Undo"(and "redo") changes in the window configuration with the key commands.
+   - [[https://www.emacswiki.org/emacs/WinnerMode][winner]] - =[built-in]= "Undo"(and "redo") changes in the window configuration with the key commands.
    - [[https://github.com/emacs-evil/evil][Evil]] - An *e* xtensible *vi* *l* ayer: manipulate Emacs with Vi key binding.
    - [[https://github.com/abo-abo/hydra][Hydra]] - Make bindings that stick around.
    - [[https://github.com/zk-phi/sublimity][sublimity]] - smooth-scrolling, minimap inspired by the sublime editor.
@@ -134,12 +134,12 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
 
 ** File Manager
 
-   - [[http://www.emacswiki.org/emacs/DiredMode][Dired]] - =[built-in]= *Dir* ectory *Ed* itor. A customizable great file manager.
-     - [[http://www.emacswiki.org/emacs/DiredPlus][Dired+]] - Functional & interface extensions for Dired.
+   - [[https://www.emacswiki.org/emacs/DiredMode][Dired]] - =[built-in]= *Dir* ectory *Ed* itor. A customizable great file manager.
+     - [[https://www.emacswiki.org/emacs/DiredPlus][Dired+]] - Functional & interface extensions for Dired.
      - [[https://github.com/Fuco1/dired-hacks][dired-hacks]] - Collection of useful Dired additions.
      - [[https://github.com/syohex/emacs-dired-k][dired-k]] - Highlight Dired buffer by file size, modified time, git status.
    - [[https://github.com/jaypei/emacs-neotree][NeoTree]] - A emacs tree plugin like NERD tree for Vim.
-   - [[http://www.emacswiki.org/emacs/SrSpeedbar][Sr Speedbar]] - Same frame speedbar.
+   - [[https://www.emacswiki.org/emacs/SrSpeedbar][Sr Speedbar]] - Same frame speedbar.
      - [[https://github.com/anshulverma/projectile-speedbar][projectile-speedbar]] - Speedbar and Projectile integration.
    - [[https://github.com/m2ym/direx-el][Direx]] - directory tree explorer.
    - [[https://github.com/fourier/ztree][ztree]] - Directory tree comparison mode.
@@ -149,13 +149,13 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
 
 ** Navigation
 
-   - [[http://www.emacswiki.org/emacs/WindMove][windmove]] - =[built-in]= Tired with =C-x o=? Now you can use =shift+arrows= to jump between windows.
+   - [[https://www.emacswiki.org/emacs/WindMove][windmove]] - =[built-in]= Tired with =C-x o=? Now you can use =shift+arrows= to jump between windows.
    - [[https://github.com/winterTTr/ace-jump-mode][Ace jump]] - A quick cursor jump mode.
    - [[https://github.com/abo-abo/avy][Avy]] - Jump to visible text using a char-based decision tree.
    - [[https://github.com/camdez/goto-last-change.el][goto-last-change]] - Move point through buffer-undo-list positions.
    - [[https://github.com/ShingoFukuyama/helm-swoop][Helm-swoop]] - Efficiently jump between matched string/lines.
    - [[https://github.com/syohex/emacs-anzu][anzu]] - displays current match and total matches.
-   - [[http://www.emacswiki.org/emacs/ImenuMode][imenu]] - =[built-in]= Menus for accessing locations in documents.
+   - [[https://www.emacswiki.org/emacs/ImenuMode][imenu]] - =[built-in]= Menus for accessing locations in documents.
    - [[https://github.com/vspinu/imenu-anywhere][imenu-anywhere]] - IDO/Helm imenu tag selection across all buffers with the same mode.
    - [[https://www.emacswiki.org/emacs/MiniMap][Minimap]] - A SublimeText-style minimap sidebar.
    - [[https://github.com/dimitri/switch-window][switch-window]] - A visual replacement for =C-x o=.
@@ -173,13 +173,13 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
    # useless packages except for being good-looking. Packages in this section are
    # usable for editing.
 
-   - [[http://www.emacswiki.org/emacs/UndoTree][undo-tree]] - Visualize the whole undo history in buffer as a tree, and you can access anywhere in it.
+   - [[https://www.emacswiki.org/emacs/UndoTree][undo-tree]] - Visualize the whole undo history in buffer as a tree, and you can access anywhere in it.
    - [[https://github.com/nschum/highlight-symbol.el][highlight-symbol]] - Auto/manually highlight the same symbols in code, navigate in them, or replace string.
    - [[https://github.com/Fanael/rainbow-delimiters][rainbow-delimiters]] - Highlights parentheses, brackets, and braces according to their depth.
    - [[https://julien.danjou.info/projects/emacs-packages][rainbow-mode]] - Display color on color-code string (hex/rgb) directly.
    - [[https://github.com/benma/visual-regexp.el][visual-regexp]] - Replace via RegExp, with real-time visual feedback directly in the buffer.
      - [[https://github.com/benma/visual-regexp-steroids.el/][visual-regexp-steroids]] - The same as visual-regexp, but use modern regular expressions instead of Emacs-style.
-   - [[http://www.emacswiki.org/emacs/WhiteSpace][whitespace]] - =[built-in]= Visualize blanks (tab/space/newline).
+   - [[https://www.emacswiki.org/emacs/WhiteSpace][whitespace]] - =[built-in]= Visualize blanks (tab/space/newline).
    - [[https://github.com/coldnew/linum-relative][linum-relative]] - display relative line number in the left margin in emacs.
    - [[http://emacsredux.com/blog/2014/08/25/a-peek-at-emacs-24-dot-4-prettify-symbols-mode/][prettify-symbol-mode]] - =[built-in]= displaying characters as fancy symbols (e.g. =lambda= -> =λ=).
    - [[https://github.com/jorgenschaefer/typoel][typo.el]] - Emacs extension for typographical editing.
@@ -240,7 +240,7 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
     - [[https://company-mode.github.io/][Company]] - A text completion framework.
       - [[https://github.com/expez/company-quickhelp][company-quickhelp]] - Documentation popups for company.
     - [[https://github.com/lewang/flx][flx]] - Fuzzy matching for Emacs like Sublime Text.
-    - [[http://www.emacswiki.org/emacs/AbbrevMode][abbrev]] - =[built-in]= Abbreviation expander.
+    - [[https://www.emacswiki.org/emacs/AbbrevMode][abbrev]] - =[built-in]= Abbreviation expander.
     - [[https://github.com/abingham/emacs-ycmd][emacs-ycmd]] - Emacs client for YCM.
 
 *** Document
@@ -251,13 +251,13 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
 *** Code Folding
 
     - [[https://github.com/mrkkrp/vimish-fold][vimish-fold]] - Vim-like text folding.
-    - [[http://www.emacswiki.org/emacs/HideShow][hideshow]] - =[built-in]= Folding regions by balanced-expression code.
-      - [[http://www.emacswiki.org/emacs/download/hideshowvis.el][hideshowvis]] - Based on =hideshow=, just display its nodes on fringe.
+    - [[https://www.emacswiki.org/emacs/HideShow][hideshow]] - =[built-in]= Folding regions by balanced-expression code.
+      - [[https://www.emacswiki.org/emacs/download/hideshowvis.el][hideshowvis]] - Based on =hideshow=, just display its nodes on fringe.
     - [[https://github.com/gregsexton/origami.el][Origami.el]] - Feature rich text folding minor mode.
 
 *** Error Checking
 
-    - [[http://www.emacswiki.org/emacs/FlyMake][FlyMake]] - =[built-in]= on-the-fly syntax checks on files using external tools.
+    - [[https://www.emacswiki.org/emacs/FlyMake][FlyMake]] - =[built-in]= on-the-fly syntax checks on files using external tools.
     - [[https://github.com/flycheck/flycheck][Flycheck]] - Modern on-the-fly syntax checking meant to be a replacement to =FlyMake=.
 
 *** Jump to Definition
@@ -290,7 +290,7 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
     - [[https://github.com/zenspider/enhanced-ruby-mode][enhanced-ruby-mode]] Enhanced Ruby Mode replaces the emacs ruby mode that
       comes with ruby. It uses the Ripper class found in ruby 1.9.2 (and later)
       to parse and indent the source code.
-    - [[http://www.emacswiki.org/emacs/yari.el][yari]] Yet Another RI interface for Emacs.
+    - [[https://www.emacswiki.org/emacs/yari.el][yari]] Yet Another RI interface for Emacs.
     - [[https://github.com/dgutov/robe][robe]] Code navigation, documentation lookup and completion for Ruby.
     - [[https://github.com/bbatsov/rubocop][rubocop]] A Ruby static code analyzer, based on the community Ruby style guide.
     - [[https://github.com/ainame/motion-mode][motion-mode]]  A package to provide emacs' major mode for RubyMotion enviroment.
@@ -300,7 +300,7 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
 
 *** Lisp Family
 
-    - [[http://www.emacswiki.org/emacs/ParEdit][Paredit]] - Minor mode for editing parentheses. Strict parenthesis auto-pairing and easy depth adjustment. Compatible with Lisp/Scheme/Clojure.
+    - [[https://www.emacswiki.org/emacs/ParEdit][Paredit]] - Minor mode for editing parentheses. Strict parenthesis auto-pairing and easy depth adjustment. Compatible with Lisp/Scheme/Clojure.
     - [[https://github.com/abo-abo/lispy][lispy]] - Minor mode for editing parenthesis, evaluating and refactoring LISP code with extremely short key bindings. Compatible with Lisp/Scheme/Clojure.
     - [[https://github.com/DogLooksGood/parinfer-mode][Parinfer]] - [[https://shaunlebron.github.io/parinfer/][Parinfer]] for Emacs, simpler Lisp editing.
 
@@ -531,11 +531,11 @@ External Guides:
 
 *** Console
 
-    - [[http://www.emacswiki.org/emacs/CategoryEshell][EShell]] - =[built-in]= A shell-like command interpreter implemented in Emacs Lisp.
-    - [[http://www.emacswiki.org/emacs/AnsiTerm][Term]] - =[built-in]= A terminal emulator in Emacs.
+    - [[https://www.emacswiki.org/emacs/CategoryEshell][EShell]] - =[built-in]= A shell-like command interpreter implemented in Emacs Lisp.
+    - [[https://www.emacswiki.org/emacs/AnsiTerm][Term]] - =[built-in]= A terminal emulator in Emacs.
     - [[https://github.com/purcell/exec-path-from-shell][exec-path-from-shell]] - Get environment variables such as $PATH from the shell for Mac user.
     - [[https://github.com/kaihaosw/eshell-prompt-extras][eshell-prompt-extras]] - Display extra information and color for your eshell prompt.
-    - [[http://www.emacswiki.org/emacs/download/multi-term.el][multi-term]] - Managing multiple terminal buffers in Emacs.
+    - [[https://www.emacswiki.org/emacs/download/multi-term.el][multi-term]] - Managing multiple terminal buffers in Emacs.
     - [[https://github.com/kyagi/shell-pop-el][shell-pop]] - Quickly toggle a shell with one key action.
     - [[https://github.com/peterwvj/eshell-up][eshell-up]] - Quickly navigate to a specific parent directory in eshell without having to repeatedly typing ~cd ..~
     - [[https://github.com/steckerhalter/emacs-fasd][fasd]] - Emacs integration for the command-line productivity booster fasd.
@@ -603,7 +603,7 @@ External Guides:
 ** LaTeX
 
    - [[https://www.gnu.org/software/auctex/][AUCTeX]] - an extensible package for writing and formatting TeX files.
-   - [[http://www.emacswiki.org/emacs/LaTeXPreviewPane][latex-preview-pane]] is a minor mode for Emacs that enables you to preview your LaTeX files directly in Emacs.
+   - [[https://www.emacswiki.org/emacs/LaTeXPreviewPane][latex-preview-pane]] is a minor mode for Emacs that enables you to preview your LaTeX files directly in Emacs.
    - [[https://www.gnu.org/software/auctex/reftex.html][RefTeX]] - =[built-in]= Adds support for labels, references, citations, and index entries.
 
 ** PDF
@@ -619,18 +619,18 @@ External Guides:
 
 *** Mail
 
-     - [[http://www.emacswiki.org/emacs/CategoryGnus][Gnus]] - =[built-in]= Reading e-mail and Usenet news.
-     - [[http://www.emacswiki.org/emacs/MessageMode][Messages]] - =[built-in]= Composing and sending e-mail inside Emacs.
+     - [[https://www.emacswiki.org/emacs/CategoryGnus][Gnus]] - =[built-in]= Reading e-mail and Usenet news.
+     - [[https://www.emacswiki.org/emacs/MessageMode][Messages]] - =[built-in]= Composing and sending e-mail inside Emacs.
      - [[http://www.djcbsoftware.nl/code/mu/mu4e.html][mu4e]] - An e-mail client for Emacs.
      - [[https://notmuchmail.org/][notmuch]] - A mail indexer which can serve as a complete client with its emacs integration.
-     - [[http://www.emacswiki.org/emacs/WanderLust][Wanderlust]] - A powerful email and Usenet client for Emacs (IMAP4rev1, NNTP, POP(POP3/APOP), MH/Maildir).
+     - [[https://www.emacswiki.org/emacs/WanderLust][Wanderlust]] - A powerful email and Usenet client for Emacs (IMAP4rev1, NNTP, POP(POP3/APOP), MH/Maildir).
      - [[http://www.mew.org/en/][mew]] - A very easy to use e-mail reader and client for Emacs.
 
 *** IRC
 
-    - [[http://www.emacswiki.org/emacs/ERC][ERC]] - =[built-in]= A powerful, modular, and extensible IRC client.
+    - [[https://www.emacswiki.org/emacs/ERC][ERC]] - =[built-in]= A powerful, modular, and extensible IRC client.
     - [[http://www.nongnu.org/riece/index.html.en][Riece]] - An IRC client for Emacs.
-    - [[http://www.emacswiki.org/emacs/rcirc][Rcirc]] - =[built-in]= Next generation IRC client.
+    - [[https://www.emacswiki.org/emacs/rcirc][Rcirc]] - =[built-in]= Next generation IRC client.
     - [[https://github.com/jorgenschaefer/circe][Circe]] - A Client for IRC in Emacs.
 
 *** Chat
@@ -663,7 +663,7 @@ External Guides:
 
 *** Package Manager
 
-    - [[http://www.emacswiki.org/emacs/ELPA][package.el]] - =[built-in]= Install and manage Emacs packages easily.
+    - [[https://www.emacswiki.org/emacs/ELPA][package.el]] - =[built-in]= Install and manage Emacs packages easily.
       - [[https://github.com/Malabarba/paradox][paradox]] - Modernizing Emacs' Package Menu with package ratings, usage statistics, customizability & more.
       - [[https://github.com/Silex/package-utils][package-utils]] - Interactive extensions for package.el .
       - [[https://github.com/larstvei/Try][try]] - Try out Emacs packages.
@@ -746,7 +746,7 @@ External Guides:
 ** Fun
 
    - [[https://github.com/TeMPOraL/nyan-mode][Nyan-mode]] - Let Nyan Cat show you your buffer position in mode line.
-   - [[http://www.emacswiki.org/emacs/ZoneMode][Zone Mode]] - =[built-in]= A buffer obfuscator, or a screensaver.
+   - [[https://www.emacswiki.org/emacs/ZoneMode][Zone Mode]] - =[built-in]= A buffer obfuscator, or a screensaver.
    - [[http://www.cb1.com/~john/computing/emacs/lisp/games/index.html][swimmers.el]] - An emacs screensaver.
    - [[https://bitbucket.org/zck/minesweeper.el][minesweeper.el]] - An implementation of minesweeper in emacs.
    - [[https://bitbucket.org/zck/2048.el][2048-game.el]] - An implementation of 2048 in emacs.
