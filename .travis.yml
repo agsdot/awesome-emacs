@@ -4,5 +4,5 @@ rvm:
 before_script:
   - gem install awesome_bot
 script:
-  - allowed_dupes=spacemacs,ace-jump-mode,ternjs,emacs-evil/evil,awesome.re
+  - allowed_dupes=ace-jump-mode,awesome.re,emacs-evil/evil,guide-key,spacemacs,ternjs
   - awesome_bot README.org --white-list $allowed_dupes
