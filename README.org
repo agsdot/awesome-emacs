@@ -3,7 +3,7 @@
 
 A community driven list of useful Emacs packages, libraries and others.
 
-Most of the following packages are available in [[https://github.com/milkypostman/melpa][MELPA]]. We recommend installing packages via it.
+Most of the following packages are available in [[https://github.com/melpa/melpa][MELPA]]. We recommend installing packages with it.
 
 #+BEGIN_QUOTE
 *Table of Contents*
