@@ -28,10 +28,12 @@ script:
   - echo "goodbye gen-toc"
   - echo " "
   - cp README.org README.org.original
-    #- $EMACS -Q --load gen-toc.el README.org
+  # - $EMACS -Q --load gen-toc.el README.org
+  # https://stackoverflow.com/questions/18033190/start-emacs-from-shell-with-predefined-lisp-code
   - $EMACS README.org -Q -nw --load gen-toc.el --eval '(progn (awesome-emacs-gen-toc)(save-buffer)(kill-emacs))'
   - export DIFFOUTPUT="$(diff README.org README.org.original  2>&1 )"
-  - $ [ ! -z "$DIFFOUTPUT" ] && echo "The Table of Contents should have been updated. Run gen-toc.el and update README.org ."
+  - echo $DIFFOUTPUT
+  - [ ! -z "$DIFFOUTPUT" ] && echo "The Table of Contents should have been updated. Run gen-toc.el and update README.org ."
   - diff README.org README.org.original
   - echo " "
   - echo "hello world"
