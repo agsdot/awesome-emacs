@@ -220,7 +220,7 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
 ** Programming
 
    - [[http://cedet.sourceforge.net/][CEDET]] - =[built-in]= an advanced development environment in Emacs.
-   - [[http://www.xref.sk/xrefactory/emacs.html][Xrefactory]] - A refactoring browser for Emacs.
+   - [[https://github.com/thoni56/c-xrefactory][C-xrefactory]] - refactoring tool and code browser for C and Java.
    - [[https://github.com/joaotavora/yasnippet][YASnippets]] - A template system that allows you to type an abbreviation and automatically expand it into function templates.
      - [[https://github.com/abo-abo/auto-yasnippet][auto-yasnippet]] - Advanced copy-paste using Yasnippet.
    - [[https://github.com/abo-abo/tiny][tiny]] - Templates based on linear range transformations.
