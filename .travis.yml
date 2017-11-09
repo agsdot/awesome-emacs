@@ -19,14 +19,17 @@ script:
   - allowed_redirect_links=awesome.re
   - awesome_bot README.org --white-list $allowed_internal_links,$allowed_redirect_links
 
-  - $CURL -O https://raw.githubusercontent.com/emacs-tw/awesome-emacs/master/gen-toc.el
-  - sed -i 's@ (interactive) @ ;;(interactive) @' gen-toc.el
+  #- $CURL -O https://raw.githubusercontent.com/emacs-tw/awesome-emacs/master/gen-toc.el
+  #- sed -i 's@ (interactive) @ ;;(interactive) @' gen-toc.el
+  #- sed -i 's@(interactive)@;;(interactive)@' gen-toc.el
+  - sh -c "sed -i 's@ (interactive)@ ;;(interactive)@' gen-toc.el"
   - echo "hello gen-toc"
   - cat gen-toc.el
   - echo "goodbye gen-toc"
   - echo " "
   - cp README.org README.org.original
-  - $EMACS -Q --load gen-toc.el README.org
+    #- $EMACS -Q --load gen-toc.el README.org
+  - $EMACS README.org -Q -nw --load gen-toc.el --eval '(progn (awesome-emacs-gen-toc)(save-buffer)(kill-emacs))'
   - export DIFFOUTPUT="$(diff README.org README.org.original  2>&1 )"
   - $ [ ! -z "$DIFFOUTPUT" ] && echo "The Table of Contents should have been updated. Run gen-toc.el and update README.org ."
   - diff README.org README.org.original
