@@ -159,8 +159,8 @@ Most of the following packages are available in [[https://github.com/melpa/melpa
    - [[https://github.com/vspinu/imenu-anywhere][imenu-anywhere]] - IDO/Helm imenu tag selection across all buffers with the same mode.
    - [[https://www.emacswiki.org/emacs/MiniMap][Minimap]] - A SublimeText-style minimap sidebar.
    - [[https://github.com/dimitri/switch-window][switch-window]] - A visual replacement for =C-x o=.
-   - [[https://github.com/abo-abo/ace-window][ace-window]] - A visual replacement for =C-x o= using [[https://github.com/winterTTr/ace-jump-mode][Ace jump]].
-   - [[https://github.com/abo-abo/ace-link][ace-link]] - Follow links in =org-mode=, =help-mode=, and =Info-mode= using [[https://github.com/winterTTr/ace-jump-mode][Ace jump]].
+   - [[https://github.com/abo-abo/ace-window][ace-window]] - Quickly switch windows.
+   - [[https://github.com/abo-abo/ace-link][ace-link]] - Quickly follow links in =org-mode=, =help-mode=, =Info-mode=, and several other modes.
    - [[https://github.com/rolandwalker/back-button][back-button]] - Visual navigation through mark rings.
    - [[https://github.com/joodland/bm][bm]] - Visual Bookmarks, provides an easy way to navigate in a buffer.
    - [[https://github.com/lukhas/buffer-move][buffer-move]] - Move or swap buffer to other window.
@@ -493,7 +493,7 @@ External Guides:
   - [[https://github.com/steckerhalter/discover-my-major][discover-my-major]] - Discover key bindings and their meaning for the current Emacs major mode.
   - [[https://github.com/kai2nenobu/guide-key][guide-key]] - Displays the available key bindings automatically and dynamically.
   - [[https://github.com/aki2o/guide-key-tip][guide-key-tip]] - Tooltip version of guide-key.
-  - [[https://github.com/justbur/emacs-which-key][which-key]] - Display available key bindings in popup. Rewrite of [[https://github.com/kai2nenobu/guide-key][guide-key]] with added features to improve display.
+  - [[https://github.com/justbur/emacs-which-key][which-key]] - Display available key bindings in popup. Rewrite of guide-key with added features to improve display.
   - [[https://github.com/darksmile/cheatsheet][cheatsheet]] - Create your own customized cheatsheet.
   - [[https://github.com/emacs-helm/helm-descbinds][helm-descbinds]] - Helm interface for Emacs' =describe-bindings=.
 
@@ -711,9 +711,9 @@ External Guides:
 ** Appearance
 
    - [[https://github.com/milkypostman/powerline][powerline]] - Emacs version of the Vim powerline.
-   - [[https://github.com/raugturi/powerline-evil][powerline-evil]] - Utilities for better [[https://github.com/emacs-evil/evil][Evil]] support for Powerline.
+   - [[https://github.com/raugturi/powerline-evil][powerline-evil]] - Utilities for better Evil support for Powerline.
    - [[https://github.com/Malabarba/smart-mode-line][smart-mode-line]] - A sexy mode-line for Emacs.
-   - [[https://github.com/TheBB/spaceline][spaceline]] - Powerline theme from [[https://github.com/syl20bnr/spacemacs][Spacemacs]].
+   - [[https://github.com/TheBB/spaceline][spaceline]] - Powerline theme from Spacemacs.
    - [[https://github.com/dbordak/telephone-line][telephone-line]] - A new implementation of Powerline for Emacs.
    - [[https://github.com/ryuslash/mode-icons][mode-icons]] - Show icons instead of mode names.
    - [[https://github.com/iqbalansari/emacs-emojify][emojify]] - Display emojis in Emacs.
