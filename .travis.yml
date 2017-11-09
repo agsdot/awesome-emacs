@@ -1,11 +1,38 @@
+sudo: false
 language: ruby
 rvm:
   - 2.4
+env:
+  global:
+    - CURL="curl -fsSkL --retry 9 --retry-delay 9"
+  matrix:
+  - EMACS_VERSION=25.3
+install:
+  - $CURL -O https://github.com/npostavs/emacs-travis/releases/download/bins/emacs-bin-${EMACS_VERSION}.tar.gz
+  - tar -xaf emacs-bin-${EMACS_VERSION}.tar.gz -C /
+  - export EMACS=/tmp/emacs/bin/emacs
 before_script:
   - gem install awesome_bot
 script:
+
   - allowed_internal_links=ternjs
   - allowed_redirect_links=awesome.re
   - awesome_bot README.org --white-list $allowed_internal_links,$allowed_redirect_links
+
+  - $CURL -O https://raw.githubusercontent.com/emacs-tw/awesome-emacs/master/gen-toc.el
+  - sed -i 's@ (interactive) @ ;;(interactive) @' gen-toc.el
+  - echo "hello gen-toc"
+  - cat gen-toc.el
+  - echo "goodbye gen-toc"
+  - echo " "
+  - cp README.org README.org.original
+  - $EMACS -Q --load gen-toc.el README.org
+  - export DIFFOUTPUT="$(diff README.org README.org.original  2>&1 )"
+  - $ [ ! -z "$DIFFOUTPUT" ] && echo "The Table of Contents should have been updated. Run gen-toc.el and update README.org ."
+  - diff README.org README.org.original
+  - echo " "
+  - echo "hello world"
+  - echo " "
+
 notifications:
   email: false
