@@ -33,7 +33,7 @@ script:
   - $EMACS README.org -Q -nw --load gen-toc.el --eval '(progn (awesome-emacs-gen-toc)(save-buffer)(kill-emacs))'
   - export DIFFOUTPUT="$(diff README.org README.org.original  2>&1 )"
   - echo $DIFFOUTPUT
-  - [ ! -z "$DIFFOUTPUT" ] && echo "The Table of Contents should have been updated. Run gen-toc.el and update README.org ."
+  - sh -c "[ ! -z $DIFFOUTPUT ] && echo 'The Table of Contents should have been updated. Run gen-toc.el and update README.org .'"
   - diff README.org README.org.original
   - echo " "
   - echo "hello world"
