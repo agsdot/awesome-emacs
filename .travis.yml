@@ -7,3 +7,5 @@ script:
   - allowed_internal_links=ternjs
   - allowed_redirect_links=awesome.re
   - awesome_bot README.org --white-list $allowed_internal_links,$allowed_redirect_links
+notifications:
+  email: false
