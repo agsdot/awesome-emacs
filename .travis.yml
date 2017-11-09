@@ -31,10 +31,10 @@ script:
   # - $EMACS -Q --load gen-toc.el README.org
   # https://stackoverflow.com/questions/18033190/start-emacs-from-shell-with-predefined-lisp-code
   - $EMACS README.org -Q -nw --load gen-toc.el --eval '(progn (awesome-emacs-gen-toc)(save-buffer)(kill-emacs))'
-  - export DIFFOUTPUT="$(diff README.org README.org.original  2>&1 )"
-  - echo $DIFFOUTPUT
+  #- export DIFFOUTPUT="$(diff README.org README.org.original  2>&1 )"
+  #- echo $DIFFOUTPUT
   #- sh -c "[ ! -z $DIFFOUTPUT ] && echo 'The Table of Contents should have been updated. Run gen-toc.el and update README.org .'"
-  - sh -c "(test ! -z $DIFFOUTPUT) && echo 'The Table of Contents should have been updated. Run gen-toc.el and update README.org'"
+  #- sh -c "(test ! -z $DIFFOUTPUT) && echo 'The Table of Contents should have been updated. Run gen-toc.el and update README.org'"
   - diff README.org README.org.original
   - echo " "
   - echo "hello world"
