@@ -2,8 +2,6 @@ sudo: required
 language: emacs-lisp
 services:
   - docker
-before-install:
-  - docker pull silex/emacs:25.3-alpine-dev
 script:
   - allowed_internal_links=ternjs,melpa
   - allowed_redirect_links=awesome.re
@@ -24,8 +22,6 @@ script:
   - echo '$PATH'
   - echo $PATH
   - ls -la
-  - docker run silex/emacs:25.3-alpine-dev emacs --version
-  - docker run silex/emacs:25.3-alpine-dev cask --version
   - mkdir $HOME/.emacs.d
   - |
     docker run -ti --rm \
@@ -33,7 +29,7 @@ script:
                -v $HOME/.emacs.d:/root/.emacs.d \
                -w ${PWD} \
                -e PATH=${PATH} \
-               silex/emacs:25.3-alpine-dev emacs \
+               jgkamat/emacs:25.2 emacs \
                README.org -Q -nw --eval "$emacsExpression"
 
   - diff README.org README.org.original
