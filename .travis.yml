@@ -22,7 +22,7 @@ script:
                -v ${HOME}:${HOME} \
                -v $HOME/.emacs.d:/root/.emacs.d \
                -e PATH=${PATH} \
-               silex/emacs:26.1-alpine-dev emacs \
+               silex/emacs:26.3-alpine-dev emacs \
                README.org -Q -nw --eval "$emacsExpression"
 
   - diff README.org README.org.original
