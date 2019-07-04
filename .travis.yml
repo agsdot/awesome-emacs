@@ -15,12 +15,19 @@ script:
   - runTocOrgInsertTocFunction="(toc-org-insert-toc) (save-buffer) (kill-emacs)"
 
   - emacsExpression="(progn $setupEmacsPackageArchives $installTocOrgPackage $runTocOrgInsertTocFunction)"
+  - ls -la
+  - pwd
+  - echo '$HOME'
+  - echo $HOME
+  - echo '$PWD'
+  - echo $PWD
+  - echo '$PATH'
+  - echo $PATH
 
   - |
     docker run -ti --rm \
                -v ${HOME}:${HOME} \
                -v $HOME/.emacs.d:/root/.emacs.d \
-               -u $(id -u) \
                -w ${PWD} \
                -e PATH=${PATH} \
                silex/emacs:25.3-alpine-dev emacs \
