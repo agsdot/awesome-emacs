@@ -23,8 +23,8 @@ script:
   - echo '$PATH'
   - echo $PATH
   - ls -la
-  - docker run silex/emacs:25.3-alpine-dev /bin/bash -c "emacs --version"
-  - docker run silex/emacs:25.3-alpine-dev /bin/bash -c "cask --version"
+  - docker run silex/emacs:25.3-alpine-dev emacs --version
+  - docker run silex/emacs:25.3-alpine-dev cask --version
 
   - |
     docker run -ti --rm \
