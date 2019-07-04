@@ -11,7 +11,8 @@ script:
   - cp README.org README.org.original
 
   - setupEmacsPackageArchives="(setq package-archives '((\\\"melpa\\\" . \\\"https://melpa.org/packages/\\\"))) (package-initialize)"
-  - installTocOrgPackage="(when (not (package-installed-p 'toc-org)) (when (not package-archive-contents) (package-refresh-contents)) (package-install 'toc-org)) (require 'toc-org)"
+  - #installTocOrgPackage="(when (not (package-installed-p 'toc-org)) (when (not package-archive-contents) (package-refresh-contents)) (package-install 'toc-org)) (require 'toc-org)"
+  - installTocOrgPackage="(package-refresh-contents) (package-install 'toc-org) (require 'toc-org)"
   - runTocOrgInsertTocFunction="(toc-org-insert-toc) (save-buffer) (kill-emacs)"
 
   - emacsExpression="(progn $setupEmacsPackageArchives $installTocOrgPackage $runTocOrgInsertTocFunction)"
