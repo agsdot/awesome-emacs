@@ -23,14 +23,14 @@ script:
   - echo $PATH
   - ls -la
   - mkdir $HOME/.emacs.d
-  - |
-    docker run -ti --rm \
-               -v ${HOME}:${HOME} \
-               -v $HOME/.emacs.d:/root/.emacs.d \
-               -w ${PWD} \
-               -e PATH=${PATH} \
-               jgkamat/emacs:25.2 emacs \
-               README.org --eval "$emacsExpression"
+  - EMACS_PACKAGES="toc-org"
+  - docker run -ti --rm \
+           -v ${HOME}:${HOME} \
+           -v $HOME/.emacs.d:/root/.emacs.d \
+           -w ${PWD} \
+           iquiw/alpine-emacs \
+           README.org --eval "(require 'toc-org) (toc-org-insert-toc) (save-buffer) (kill-emacs)"
+
 
   - diff README.org README.org.original
   - echo "If the README pre and post processing are identical, the diff should exit with 0. Otherwise, an error code indicates that toc-org should have been run to update the Table of Contents."
