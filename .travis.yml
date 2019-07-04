@@ -30,7 +30,7 @@ script:
                -w ${PWD} \
                -e PATH=${PATH} \
                jgkamat/emacs:25.2 emacs \
-               README.org -Q -nw --eval "$emacsExpression"
+               README.org --eval "$emacsExpression"
 
   - diff README.org README.org.original
   - echo "If the README pre and post processing are identical, the diff should exit with 0. Otherwise, an error code indicates that toc-org should have been run to update the Table of Contents."
