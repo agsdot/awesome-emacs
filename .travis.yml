@@ -17,7 +17,7 @@ script:
   - emacsExpression="(progn $setupEmacsPackageArchives $installTocOrgPackage $runTocOrgInsertTocFunction)"
 
   - |
-    docker run --rm -it \
+    docker run --rm \
                -w $(pwd) \
                -v ${HOME}:${HOME} \
                -v $HOME/.emacs.d:/root/.emacs.d \
