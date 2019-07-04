@@ -21,6 +21,7 @@ script:
                -w $(pwd) \
                -v ${HOME}:${HOME} \
                -v $HOME/.emacs.d:/root/.emacs.d \
+               -e PATH=${PATH} \
                silex/emacs:26.1-alpine-dev emacs \
                README.org -Q -nw --eval "$emacsExpression"
 
