@@ -15,7 +15,6 @@ script:
   - runTocOrgInsertTocFunction="(toc-org-insert-toc) (save-buffer) (kill-emacs)"
 
   - emacsExpression="(progn $setupEmacsPackageArchives $installTocOrgPackage $runTocOrgInsertTocFunction)"
-  - ls -la
   - pwd
   - echo '$HOME'
   - echo $HOME
@@ -23,12 +22,15 @@ script:
   - echo $PWD
   - echo '$PATH'
   - echo $PATH
+  - ls -la
+  - docker run silex/emacs:25.3-alpine-dev /bin/bash -c "emacs --version"
+  - docker run silex/emacs:25.3-alpine-dev /bin/bash -c "cask --version"
 
   - |
-    docker run -ti --rm \
+    #docker run -ti --rm \
                -v ${HOME}:${HOME} \
                -v $HOME/.emacs.d:/root/.emacs.d \
-               -w ${PWD} \
+               -v $PWD:/mnt
                -e PATH=${PATH} \
                silex/emacs:25.3-alpine-dev emacs \
                README.org -Q -nw --eval "$emacsExpression"
