@@ -29,7 +29,7 @@ script:
            -v $HOME/.emacs.d:/root/.emacs.d \
            -w ${PWD} \
            iquiw/alpine-emacs \
-           README.org --eval "(package-refresh-contents) (package-install 'toc-org)(require 'toc-org) (toc-org-insert-toc) (save-buffer) (kill-emacs)"
+           --eval "(package-refresh-contents) (package-install 'toc-org)(require 'toc-org) (toc-org-insert-toc) (save-buffer) (kill-emacs)" README.org 
 
 
 
