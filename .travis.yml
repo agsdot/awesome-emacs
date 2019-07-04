@@ -27,7 +27,7 @@ script:
   - docker run silex/emacs:25.3-alpine-dev /bin/bash -c "cask --version"
 
   - |
-    #docker run -ti --rm \
+    docker run -ti --rm \
                -v ${HOME}:${HOME} \
                -v $HOME/.emacs.d:/root/.emacs.d \
                -v $PWD:/mnt
