@@ -3,7 +3,7 @@ language: emacs-lisp
 services:
   - docker
 before-install:
-  - docker pull silex/emacs:26.3-alpine-dev
+  - docker pull silex/emacs:25.3-alpine-dev
 script:
   - allowed_internal_links=ternjs,melpa
   - allowed_redirect_links=awesome.re
@@ -22,7 +22,7 @@ script:
                -v ${HOME}:${HOME} \
                -v $HOME/.emacs.d:/root/.emacs.d \
                -e PATH=${PATH} \
-               silex/emacs:26.3-alpine-dev emacs \
+               silex/emacs:25.3-alpine-dev emacs \
                README.org -Q -nw --eval "$emacsExpression"
 
   - diff README.org README.org.original
