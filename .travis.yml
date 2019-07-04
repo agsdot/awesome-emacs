@@ -25,7 +25,7 @@ script:
   - ls -la
   - docker run silex/emacs:25.3-alpine-dev emacs --version
   - docker run silex/emacs:25.3-alpine-dev cask --version
-
+  - mkdir $HOME/.emacs.d
   - |
     docker run -ti --rm \
                -v ${HOME}:${HOME} \
