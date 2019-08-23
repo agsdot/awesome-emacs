@@ -1,8 +1,11 @@
-#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+#+HTML:<div align=center>
+
 [[https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/120px-EmacsIcon.svg.png]]
 
 * Awesome Emacs
 [[https://github.com/sindresorhus/awesome][https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg]] [[https://travis-ci.org/emacs-tw/awesome-emacs][file:https://api.travis-ci.org/emacs-tw/awesome-emacs.svg?branch=master]] [[https://unlicense.org][https://upload.wikimedia.org/wikipedia/commons/e/ee/Unlicense_Blue_Badge.svg]]
+
+#+HTML:</div>
 
 Welcome to Awesome Emacs, a community driven list of useful Emacs packages, utilities and libraries. Most of the following packages are available in [[https://github.com/melpa/melpa][MELPA]]. We recommend installing packages with it.
 
