@@ -10,7 +10,7 @@ script:
   - allowed_internal_links=ternjs,melpa
   - allowed_redirect_links=awesome.re
   #- echo "cat README.org"
-  #- docker run -ti --rm -v $PWD:/mnt:rw dkhamsing/awesome_bot README.org --allow-ssl --white-list $allowed_internal_links,$allowed_redirect_links
+  - docker run -ti --rm -v $PWD:/mnt:rw dkhamsing/awesome_bot README.org --allow-ssl --white-list $allowed_internal_links,$allowed_redirect_links
 
   - cp README.org README.org.original
   - diff README.org README.org.original
