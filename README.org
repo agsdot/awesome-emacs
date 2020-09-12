@@ -63,7 +63,6 @@ Above all, enjoy using Emacs. The community, that more than anything, makes Emac
     - [[#makefile][Makefile]]
     - [[#sml][SML]]
     - [[#groovy][Groovy]]
-    - [[#kotlin][Kotlin]]
     - [[#r][R]]
     - [[#julia][Julia]]
     - [[#ocaml][OCaml]]
@@ -984,7 +983,6 @@ For additional git related emacs packages to use or to get inspiration from, tak
    - [[https://www.reddit.com/r/emacs/][Emacs subreddit]] - The reddit Emacs channel.
    - [[https://planet.emacslife.com/][Planet Emacsen]] - A community driven mashup of Emacs articles.
    - [[https://sachachua.com/blog/emacs/][Living an Awesome Life - Emacs]] - Sacha Chua's (@sachac) extensive blog posts featuring Emacs.
-   - [[http://oremacs.com/][(or emacs]] - An (ir)relevant blog about Emacs.
    - [[http://oremacs.com/][(or emacs]] - An (ir)relevant blog about Emacs.
    - [[https://emacsredux.com/][Emacs Redux]] - Return to the Essence of Text Editing.
    - [[http://emacsrocks.com/][Emacs Rocks]] - Some episodes to prove that Emacs rocks.
