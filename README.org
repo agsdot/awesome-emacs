@@ -63,6 +63,7 @@ Above all, enjoy using Emacs. The community, that more than anything, makes Emac
     - [[#makefile][Makefile]]
     - [[#sml][SML]]
     - [[#groovy][Groovy]]
+    - [[#kotlin][Kotlin]]
     - [[#r][R]]
     - [[#julia][Julia]]
     - [[#ocaml][OCaml]]
