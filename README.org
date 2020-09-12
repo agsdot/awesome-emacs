@@ -992,6 +992,7 @@ For additional git related emacs packages to use or to get inspiration from, tak
    - [[http://whattheemacsd.com/][What the .emacs.d!?]] - Sharing Emacs snippets and pastes with others.
    - [[https://hackr.io/tutorials/learn-emacs][Community Curated Emacs Resources]] - Top Recommended Resources.
    - [[http://ergoemacs.org/index.html][ErgoEmacs]] - Emacs/Emacs Lisp tutorials.
+   - [[http://ergoemacs.org/index.html][ErgoEmacs]] - Emacs/Emacs Lisp tutorials.
 
 * Contributing
 
