@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ '*' ]
+  pull_request:
+    branches: [ '*' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+      - name: Pre step, pull docker images and set variables
+        run: |
+          docker pull dkhamsing/awesome_bot
+          docker pull silex/emacs:27.1-alpine
+          export AWESOME_BOT="docker run -ti --rm -v $(pwd):$(pwd) -w $(pwd) dkhamsing/awesome_bot"
+          export EMACS="docker run -ti --rm -v $(pwd):$(pwd) -w $(pwd) silex/emacs:27.1-alpine emacs"
+
+      - name: test binaries
+        run: |
+          $EMACS --version
+          $AWESOME_BOT --version
+
+
