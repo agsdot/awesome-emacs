@@ -25,11 +25,8 @@ jobs:
         run: |
           docker pull dkhamsing/awesome_bot
           docker pull silex/emacs:27.1-alpine
-          export AWESOME_BOT="docker run -ti --rm -v $(pwd):$(pwd) -w $(pwd) dkhamsing/awesome_bot"
-          export EMACS="docker run -ti --rm -v $(pwd):$(pwd) -w $(pwd) silex/emacs:27.1-alpine emacs"
-
-      - name: test binaries
-        run: |
+          AWESOME_BOT="docker run -ti --rm -v $(pwd):$(pwd) -w $(pwd) dkhamsing/awesome_bot"
+          EMACS="docker run -ti --rm -v $(pwd):$(pwd) -w $(pwd) silex/emacs:27.1-alpine emacs"
           $EMACS --version
           $AWESOME_BOT --version
 
