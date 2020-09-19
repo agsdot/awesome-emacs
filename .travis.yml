@@ -1,7 +1,7 @@
 arch: amd64
 os: linux
 dist: focal
-language: minimal
+language: shell
 services:
   - docker
 before_script:
