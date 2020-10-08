@@ -15,13 +15,13 @@ jobs:
 
       - name: Pre step, pull docker images
         run: |
-          docker pull dkhamsing/awesome_bot
+          docker pull dkhamsing/awesome_bot:1.19.1-docker
           docker pull silex/emacs:27.1-alpine
 
       - name: Set variables check versions
         run: |
           EMACS="docker run -i --rm -v $(pwd):$(pwd) -w $(pwd) silex/emacs:27.1-alpine emacs"
-          AWESOME_BOT="docker run -i --rm -v $(pwd):$(pwd):rw -w $(pwd) dkhamsing/awesome_bot"
+          AWESOME_BOT="docker run -i --rm -v $(pwd):$(pwd):rw -w $(pwd) dkhamsing/awesome_bot:1.19.1-docker"
 
           $EMACS --version
           $AWESOME_BOT --version
