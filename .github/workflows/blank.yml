@@ -12,23 +12,22 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Ruby 2.6
-        uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 2.6.x
-      - name: Checks
-        run: |
-          gem install awesome_bot
-
+      #- name: Set up Ruby 2.6
+      #  uses: actions/setup-ruby@v1
+      #  with:
+      #    ruby-version: 2.6.x
+      #- name: Checks
+      #  run: |
+      #    gem install awesome_bot
       - name: Pre step, pull docker images
         run: |
           docker pull silex/emacs:27.1-alpine
-          #docker pull dkhamsing/awesome_bot:1.19.1-docker
+          docker pull dkhamsing/awesome_bot:1.19.1-docker
 
       - name: Set variables check versions
         run: |
           EMACS="docker run -i --rm -v $(pwd):$(pwd) -w $(pwd) silex/emacs:27.1-alpine emacs"
-          AWESOME_BOT="awesome_bot"
+          AWESOME_BOT="docker run -ti --rm -v $(pwd):$(pwd) -w $(pwd) dkhamsing/awesome_bot:1.19.1-docker"
 
           $EMACS --version
           $AWESOME_BOT --version
@@ -36,7 +35,7 @@ jobs:
           ALLOWED_INTERNAL_LINKS="ternjs,melpa"
           ALLOWED_REDIRECT_LINKS="awesome.re"
 
-          $AWESOME_BOT README.org --request-delay 0.5 --allow-ssl --white-list ternjs,melpa,awesome.re
+          $AWESOME_BOT README.org --request-delay 1 --allow-ssl --white-list ternjs,melpa,awesome.re
 
           cp README.org README.org.original
           diff README.org README.org.original
