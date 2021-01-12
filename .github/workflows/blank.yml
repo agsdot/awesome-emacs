@@ -12,10 +12,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Ruby 2.8
-        uses: actions/setup-ruby@v1
+      - uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.8
+          ruby-version: '3.0'
       - name: Prep binaries
         run: |
           docker pull silex/emacs:27.1-alpine
