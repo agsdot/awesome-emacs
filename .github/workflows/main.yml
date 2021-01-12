@@ -34,6 +34,8 @@ jobs:
 
           $AWESOME_BOT README.org --request-delay 1 --allow-ssl --white-list ternjs,melpa,awesome.re
 
+      - name: Table of Contents correctly being generated check
+        run: |
           cp README.org README.org.original
           diff README.org README.org.original
           $EMACS README.org -Q -batch --eval "(progn (setq package-archives '((\"melpa\" . \"https://melpa.org/packages/\"))) (package-initialize) (when (not (package-installed-p 'toc-org)) (when (not package-archive-contents) (package-refresh-contents)) (package-install 'toc-org)) (require 'toc-org) (toc-org-insert-toc) (save-buffer))"
