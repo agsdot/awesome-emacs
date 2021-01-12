@@ -19,7 +19,14 @@ jobs:
           docker pull silex/emacs:27.1-alpine
           #gem install awesome_bot
           docker pull dkhamsing/awesome_bot:1.19.1-docker
-
+      - name: Table of Contents correctly being generated check
+        run: |
+          cp README.org README.org.original
+          diff README.org README.org.original
+          $EMACS README.org -Q -batch --eval "(progn (setq package-archives '((\"melpa\" . \"https://melpa.org/packages/\"))) (package-initialize) (when (not (package-installed-p 'toc-org)) (when (not package-archive-contents) (package-refresh-contents)) (package-install 'toc-org)) (require 'toc-org) (toc-org-insert-toc) (save-buffer))"
+          diff README.org README.org.original
+          echo "If the README pre and post processing are identical, the diff should exit with 0. Otherwise, an error code indicates that toc-org should have been run to update the Table of Contents."
+          #$AWESOME_BOT README.org --allow-ssl --white-list $ALLOWED_INTERNAL_LINKS,$ALLOWED_REDIRECT_LINKS
       - name: awesome_bot links check
         run: |
           EMACS="docker run -i --rm -v $(pwd):$(pwd) -w $(pwd) silex/emacs:27.1-alpine emacs"
@@ -33,14 +40,3 @@ jobs:
           ALLOWED_REDIRECT_LINKS="awesome.re"
 
           $AWESOME_BOT README.org --request-delay 1 --allow-ssl --white-list ternjs,melpa,awesome.re
-
-      - name: Table of Contents correctly being generated check
-        run: |
-          cp README.org README.org.original
-          diff README.org README.org.original
-          $EMACS README.org -Q -batch --eval "(progn (setq package-archives '((\"melpa\" . \"https://melpa.org/packages/\"))) (package-initialize) (when (not (package-installed-p 'toc-org)) (when (not package-archive-contents) (package-refresh-contents)) (package-install 'toc-org)) (require 'toc-org) (toc-org-insert-toc) (save-buffer))"
-          diff README.org README.org.original
-          echo "If the README pre and post processing are identical, the diff should exit with 0. Otherwise, an error code indicates that toc-org should have been run to update the Table of Contents."
-          #$AWESOME_BOT README.org --allow-ssl --white-list $ALLOWED_INTERNAL_LINKS,$ALLOWED_REDIRECT_LINKS
-
-
