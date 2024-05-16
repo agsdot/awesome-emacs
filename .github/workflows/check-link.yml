@@ -1,0 +1,40 @@
+name: Check URL Validity
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 0 1 * *" # Run monthly
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.REPO_KEY }}
+
+      - name: lychee Link Checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: "--cache --max-cache-age 1d --verbose --no-progress README.org"
+          token: ${{ github.token }}
+          fail: true
+
+      - name: Comment on failure
+        uses: peter-evans/create-or-update-comment@v4
+        if: env.lychee_exit_code != 0
+        with:
+          token: ${{ github.token }}
+          issue-number: 73
+          body: |
+            A link check job [failed](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+
+      - name: Fail if there were link errors
+        run: exit '${{ env.lychee_exit_code }}'
