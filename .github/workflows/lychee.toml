@@ -1,8 +1,12 @@
 # Cache the results of Lychee if ran locally in order to minimise the chance of rate limiting
 cache = true
+max_cache_age = "1d"
+verbose = "info"
+no_progress = false
 # HTTP status code: 429 (Too Many Requests) will also be treated as a valid link if Lychee gets rate limited
 accept = [200, 429]
 max_retries = 6
+max_concurrency = 10
 exclude = [
   "reddit.com",
   "https://github.com/emacs-tw/awesome-emacs/actions",
