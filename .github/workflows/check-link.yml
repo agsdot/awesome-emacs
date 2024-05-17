@@ -28,6 +28,7 @@ jobs:
             --max-cache-age=1d
             --verbose
             --no-progress
+            --config ./.github/workflows/lychee.toml
             README.org
           token: ${{ github.token }}
           fail: true
