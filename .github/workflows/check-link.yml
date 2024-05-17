@@ -23,7 +23,12 @@ jobs:
       - name: lychee Link Checker
         uses: lycheeverse/lychee-action@v1
         with:
-          args: "--cache --max-cache-age 1d --verbose --no-progress README.org"
+          args: >-
+            --cache
+            --max-cache-age=1d
+            --verbose
+            --no-progress
+            README.org
           token: ${{ github.token }}
           fail: true
 
